@@ -1,0 +1,7 @@
+<h1>Pagina principal Inmuebles</h1>
+@for (inmueble of inmuebles; track inmueble.id) {
+
+    <a [routerLink]="['/inmueble', inmueble.id]">
+    <img src="{{inmueble.imagen}}" ><br> 
+    <button>Más informacion</button> </a>
+}
